@@ -1,0 +1,17 @@
+{
+  "plugins": ["prettier"],
+  "rules": {
+    "react/no-unsafe": 2,
+    "prettier/prettier": "error",
+    "react/no-unused-state": 2,
+    "react/jsx-no-useless-fragment": 2,
+    "react/prefer-stateless-function": 2,
+    "react/prop-types": [2, { "skipUndeclared": false }]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "extends": ["eslint:recommended", "plugin: react/recommended"]
+  }
+}
