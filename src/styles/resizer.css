@@ -1,0 +1,24 @@
+.Resizer:hover {
+  transition: all 2s ease;
+}
+
+.Resizer {
+  z-index: 1;
+  opacity: 0.2;
+  background: #000;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.Resizer.vertical {
+  width: 21px;
+  margin: 0 -10px;
+  cursor: col-resize;
+  border-left: 10px solid rgba(255, 255, 255, 0);
+  border-right: 10px solid rgba(255, 255, 255, 0);
+}
+
+.Resizer.vertical:hover {
+  border-left: 10px solid rgba(0, 0, 0, 0.5);
+  border-right: 10px solid rgba(0, 0, 0, 0.5);
+}
