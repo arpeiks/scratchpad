@@ -1,4 +1,11 @@
-export enum SIDEBAR_WIDTH {
+export enum SIDEBAR_STATE {
+  PINNED = "PINNED",
   EXPANDED = "EXPANDED",
   COLLAPSED = "COLLAPSED",
+}
+
+export enum SIDEBAR_WIDTH {
+  PINNED = "240",
+  EXPANDED = "240",
+  COLLAPSED = "68",
 }

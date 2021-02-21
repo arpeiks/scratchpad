@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SIDEBAR_WIDTH } from "../utils/enums";
+import { SIDEBAR_STATE } from "../utils/enums";
 
 interface ISTATE {
-  width: SIDEBAR_WIDTH;
+  width: SIDEBAR_STATE;
 }
 
 type IUPDATE = any;
 
 const INITIAL_STATE = {
-  width: SIDEBAR_WIDTH.COLLAPSED,
+  width: SIDEBAR_STATE.COLLAPSED,
 };
 
 const StateContext = React.createContext<ISTATE | null>(null);
