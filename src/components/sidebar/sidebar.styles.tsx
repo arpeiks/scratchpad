@@ -8,12 +8,13 @@ interface IRoot {
 export const Root = styled.div<IRoot>`
   top: 0;
   left: 0;
+  z-index: 1;
   width: 68px;
   height: 100vh;
   position: fixed;
-  background: blue;
   overflow: hidden;
-  transition: 0.3s;
+  background: blue;
+  transition: width 0.3s;
   box-sizing: border-box;
   padding: 2rem 1rem 0 0;
 

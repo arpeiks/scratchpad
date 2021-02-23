@@ -3,6 +3,7 @@ import React from "react";
 import "../../styles/app.css";
 import Sidebar from "../sidebar";
 import "../../styles/resizer.css";
+import SplitPane from "react-split-pane";
 import { Root, Main } from "./app.styles";
 import { SIDEBAR_STATE } from "../../utils/enums";
 import { useSidebar } from "../../contexts/sidebar";
@@ -23,8 +24,10 @@ const App: React.FC = () => {
     <Root>
       <Sidebar />
       <Main className={sidebar.width}>
-        <div>1234567890</div>
-        <button onClick={handlePin}>PIN</button>
+        <SplitPane>
+          <div>1234567890</div>
+          <button onClick={handlePin}>PIN</button>
+        </SplitPane>
       </Main>
     </Root>
   );
